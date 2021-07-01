@@ -29,7 +29,7 @@ it ("responds correctly to status check command", function(){
 
 it ("responds correctly to mode change command", function(){
   expect (rover.mode).toEqual(message.command)
-}
+})
 
 it ("responds with false completed value when attempting to move in LOW_POWER mode", fucntion(){
   expect (rover.position).toEqual()
@@ -37,4 +37,5 @@ it ("responds with false completed value when attempting to move in LOW_POWER mo
 
 it("responds with position for move command", function(){
   expect (rover.position).toEqual()
-})})
+})
+})
