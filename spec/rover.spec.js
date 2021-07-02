@@ -10,13 +10,13 @@ describe("Rover class", function() {
 
   // 7 tests here!
 it ("constructor sets position and default values for mode and generatorWatts", function() {
-  expect (rover.position).toEqual(this.position)
-  expect (rover.mode).toEqual("Normal")
-  expect (rover.generatorWatts).toEqual(110)
+  expect (Rover.position).toEqual(this.position)
+  /*expect (Rover.mode).toEqual("Normal")
+  expect (Rover.generatorWatts).toEqual(110)*/
 })
 
 it ("response returned by receive Message contains name of message", function() {
-  expect (rover.receiveMessage).toEqual(message.name)
+  expect (Rover.receiveMessage(message)).toEqual(Message.name)
 })
 
 it ("response returned by receiveMessage includes two results if two commands are sent in the message", function(){
