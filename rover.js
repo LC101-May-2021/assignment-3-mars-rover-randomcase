@@ -3,7 +3,13 @@ class Rover {
      this.position = position
      this.mode = "Normal"
      this.generatorWatts = 110
-     this.recieveMessage(message)
+   }
+   receiveMessage(message){
+     let rainbow = {
+       message: message.name,
+       results: []
+    }
+    return rainbow;
    }
 }
 
